@@ -1,25 +1,24 @@
+const {addExclamation, capitalize, log} = require('./utils')
 const Crayon = require('./crayon')
 
-const initialColors = ['red', 'blue', 'white']
+log('(Imperative)')
 
 const crayon = new Crayon()
 crayon.setColor('green')
-const crayonColor = crayon.getColor()
 
-console.log(`We have crayonColor: ${crayonColor} \n`)
+log(crayon.getColor())
 
-const addExclamation = text => text + '!'
-
-const capitalize = text => text.charAt(0).toUpperCase() + text.slice(1)
-
-if (crayonColor !== null) {
-	const allColors = initialColors.concat([crayonColor])
-
-	for (var i = 0; i < allColors.length; i++) {
-		const exclamationedColor = addExclamation(allColors[i])
+const prettifyColor = color => {
+	if (color !== null) {
+		const exclamationedColor = addExclamation(color)
 		const capitalizedExclamationedColor = capitalize(exclamationedColor)
-		allColors[i] = capitalizedExclamationedColor
+		return capitalizedExclamationedColor
 	}
-
-	console.log(allColors)
 }
+
+const prettyColor = prettifyColor(crayon.getColor())
+log(prettyColor)
+
+log('')
+log('--------')
+log('')
