@@ -1,0 +1,18 @@
+{
+  "name": "adt",
+  "version": "1.0.0",
+  "description": "Algebraic Data Types showcase",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "ADT",
+    "JavaScript"
+  ],
+  "author": "William Bergqvist",
+  "license": "ISC",
+  "dependencies": {
+    "monet": "^0.8.10"
+  }
+}
