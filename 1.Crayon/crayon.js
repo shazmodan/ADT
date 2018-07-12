@@ -1,5 +1,3 @@
-const readline = require('readline');
-
 class Crayon {
 	constructor() {
 		this._color = null
