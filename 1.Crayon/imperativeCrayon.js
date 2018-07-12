@@ -1,7 +1,6 @@
 const {addExclamation, capitalize, log} = require('./utils')
-const Crayon = require('./crayon')
 
-log('(Imperative)')
+const Crayon = require('./crayon')
 
 const crayon = new Crayon()
 crayon.setColor('green')
@@ -18,7 +17,3 @@ const prettifyColor = color => {
 
 const prettyColor = prettifyColor(crayon.getColor())
 log(prettyColor)
-
-log('')
-log('--------')
-log('')

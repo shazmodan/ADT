@@ -1,2 +1,17 @@
+console.log('(Imperative)')
 require('./1.Crayon/imperativeCrayon')
+console.log('')
+console.log('--------')
+console.log('')
+
+console.log('(Maybe)')
 require('./1.Crayon/maybeCrayon')
+console.log('')
+console.log('---------')
+console.log('')
+
+console.log('(Either)')
+require('./1.Crayon/eitherCrayon')
+console.log('')
+console.log('---------')
+console.log('')
