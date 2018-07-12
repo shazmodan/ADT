@@ -7,8 +7,8 @@ crayon.setColor('green')
 
 log(crayon.getColor())
 
-// eitherColor:: Any -> Either
-const eitherColor = x => x != null ? Either.Right(x) : Either.Left('Color not set')
+// eitherColor:: String -> Either
+const eitherColor = color => color != null ? Either.Right(color) : Either.Left('Color not set')
 
 eitherColor(crayon.getColor())
 	.map(addExclamation)
